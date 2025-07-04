@@ -90,52 +90,6 @@ h1, h2, h3 {
   color: #FF6B00;
 }
 
-.hamburger {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 28px;
-    color: #333;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-}
-
-.search-bar {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 0.5rem;
-  margin-left: 1rem;
-}
-
-/* 3. MOBILE MENU */
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  padding: 1rem;
-  background: #fff;
-}
-
-.mobile-menu a {
-  padding: 0.5rem 0;
-  color: #333;
-  text-decoration: none;
-  border-bottom: 1px solid #eee;
-}
 
 .hidden {
   display: none;
@@ -149,7 +103,37 @@ h1, h2, h3 {
 }
 
 .hero-img {
-  width: 100px;
+  w/* Sembunyikan hamburger di desktop */
+.hamburger {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: auto;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+    position: absolute;
+    top: 60px; /* sesuaikan tinggi navbar */
+    right: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+}
+  idth: 100px;
   margin-bottom: 1rem;
 }
 
