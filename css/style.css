@@ -1,0 +1,204 @@
+/* ===== Tugasfy CSS Style ===== */
+
+/* 1. RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: #FF6B00;
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* 2. HEADER */
+.header {
+  background: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.brand-text h1 {
+  font-size: 1.5rem;
+}
+
+.brand-text p {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: -0.5rem;
+}
+
+.desktop-menu ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.desktop-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.desktop-menu a:hover {
+  color: #FF6B00;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.search-bar {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+/* 3. MOBILE MENU */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+  background: #fff;
+}
+
+.mobile-menu a {
+  padding: 0.5rem 0;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 4. HERO */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  color: #fff;
+}
+
+.hero-img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background: #FF6B00;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #e85f00;
+}
+
+/* 5. SECTION */
+.section {
+  padding: 4rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* 6. SLIDER PLACEHOLDER */
+.slider-placeholder {
+  background: #fafafa;
+  border: 2px dashed #ccc;
+  padding: 2rem;
+  text-align: center;
+  color: #aaa;
+}
+
+/* 7. FOOTER */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer a {
+  color: #F4C430;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* 8. RESPONSIVE */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
