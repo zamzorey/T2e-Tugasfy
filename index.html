@@ -1,23 +1,19 @@
-
-<!DOCTYPE html>
-<html lang="id">
->
-<head>
+<!DOCTYPE html><html lang="id"><head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content='width=device-width, initial-scale=1.0' />
-  <meta name="description" content="Tugasfy - Solusi Tugas Cerdas Pelajar Produktif" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tugasfy - Tugas Beres, Hati Tenang</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="assets/img/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head><body>
   <header class="header">
     <div class="container nav-wrapper">
       <div class="logo">
-        <img src="assets/img/logo.png" alt="Logo Tugasfy" class="logo-img" />
-        <div class="brand">
+        <img src="assets/img/logo.png" alt="Tugasfy Logo" class="logo-img" />
+        <div class="brand-text">
           <h1>Tugasfy</h1>
           <p>Tugas Beres, Hati Tenang</p>
         </div>
@@ -26,40 +22,83 @@
         <ul>
           <li><a href="#">Beranda</a></li>
           <li><a href="#about">Tentang</a></li>
-          <li><a href="#services">Layanan</a></li>
+          <li><a href="#layanan">Layanan</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#kontak">Kontak</a></li>
         </ul>
       </nav>
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
     </div>
     <div id="mobile-menu" class="mobile-menu hidden">
       <a href="#">Beranda</a>
       <a href="#about">Tentang</a>
-      <a href="#services">Layanan</a>
+      <a href="#layanan">Layanan</a>
       <a href="#blog">Blog</a>
       <a href="#kontak">Kontak</a>
     </div>
-  </header>
-
-  <section class="hero" id="home">
-    <div class="container hero-content" data-aos="fade-up">
-      <div class="hero-text">
-        <h2>Selamat datang di Tugasfy</h2>
-        <p>Amunisi Bantuan buat Solusi Tugas Cerdas Pelajar Produktif</p>
-        <a href="https://wa.me/6287848005004" class="cta-button">Pakai Tugasfy Sekarang!</a>
-      </div>
-      <div class="hero-img">
-        <img src="assets/img/thumb.png" alt="Thumbnail Tugasfy" />
+  </header>  <section class="hero">
+    <div class="container">
+      <h2>Selamat datang di Tugasfy</h2>
+      <p>Amunisi Bantuan buat Solusi Tugas Cerdas Pelajar Produktif</p>
+      <a href="https://wa.me/6287848005004" class="cta-button">Pakai Tugasfy Sekarang!</a>
+      <img src="assets/img/thumb.png" alt="Thumbnail" class="hero-img" />
+    </div>
+  </section>  <section id="about" class="section">
+    <div class="container">
+      <h2>Tentang Tugasfy</h2>
+      <p>Tugasfy adalah platform bantu tugas pelajar agar lebih produktif, kreatif, dan hati tenang.</p>
+    </div>
+  </section>  <section id="layanan" class="section">
+    <div class="container">
+      <h2>Layanan Kami</h2>
+      <div class="slider-placeholder">[Slider Program & Keunggulan Placeholder]</div>
+    </div>
+  </section>  <section id="blog" class="section">
+    <div class="container">
+      <h2>Tips & Artikel</h2>
+      <div class="slider-placeholder">[Artikel dan blog edukatif placeholder]</div>
+    </div>
+  </section>  <section class="section">
+    <div class="container">
+      <h2>Testimoni</h2>
+      <div style="position: relative; width: 100%; height: 0; padding-top: 100%;">
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;"
+          src="https://www.canva.com/design/DAGsFJuLcpc/EE8Ra5JIAMnFCt4qZDOX5w/view?embed" allowfullscreen>
+        </iframe>
       </div>
     </div>
-  </section>
-
-  <footer class="footer">
+  </section>  <section id="kontak" class="section">
+    <div class="container">
+      <h2>Kotak Saran</h2>
+      <iframe data-tally-src="https://tally.so/embed/w4YGeo?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy" width="100%" height="200" frameborder="0"></iframe>
+      <script>
+        var d = document,
+          w = "https://tally.so/widgets/embed.js",
+          v = function () {
+            "undefined" != typeof Tally ? Tally.loadEmbeds() :
+              d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((e) => {
+                e.src = e.dataset.tallySrc;
+              });
+          };
+        if ("undefined" != typeof Tally) v();
+        else if (d.querySelector('script[src="' + w + '"]') == null) {
+          var s = d.createElement("script");
+          s.src = w;
+          s.onload = v;
+          s.onerror = v;
+          d.body.appendChild(s);
+        }
+      </script>
+    </div>
+  </section>  <footer class="footer">
     <p>&copy; 2025 Tugasfy. Dibuat oleh ZAM ZAM.</p>
-  </footer>
-
-  <script src="assets/js/script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-</body>
-</html>
+    <p>
+      <a href="mailto:tugasfy@gmail.com">Email</a> | 
+      <a href="https://instagram.com/tugasfy" target="_blank">Instagram</a> | 
+      <a href="https://tiktok.com/@tugasfy" target="_blank">TikTok</a> | 
+      <a href="https://whatsapp.com/channel/0029VbAT0qSJkK7IqqxlYe1k" target="_blank">WhatsApp Channel</a>
+    </p>
+  </footer>  <script src="assets/js/script.js"></script>  <script>AOS.init();</script></body></html>
