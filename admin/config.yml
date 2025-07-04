@@ -1,0 +1,52 @@
+# ===== Netlify CMS Config =====
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Konten", name: "body", widget: "markdown" }
+
+  - name: "services"
+    label: "Layanan Tugasfy"
+    folder: "_services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nama Layanan", name: "title", widget: "string" }
+      - { label: "Deskripsi", name: "description", widget: "text" }
+      - { label: "Gambar", name: "image", widget: "image" }
+
+  - name: "testimoni"
+    label: "Testimoni"
+    folder: "_testimoni"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nama", name: "name", widget: "string" }
+      - { label: "Pesan", name: "message", widget: "text" }
+      - { label: "Foto", name: "photo", widget: "image" }
+
+  - name: "settings"
+    label: "Pengaturan Website"
+    files:
+      - label: "Kontak & Sosial Media"
+        name: "kontak"
+        file: "_data/kontak.yml"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
+          - { label: "TikTok", name: "tiktok", widget: "string" }
+          - { label: "WhatsApp Channel", name: "whatsapp", widget: "string" }
