@@ -3,7 +3,7 @@
 // 🔸 1. Hamburger Menu Toggle
 function toggleMenu() {
   const menu = document.getElementById('mobile-menu');
-  menu.classList.toggle('hidden'); // buka/tutup menu mobile
+  menu.classList.toggle('show');
 }
 
 // 🔸 2. AOS - Animasi masuk ketika di-scroll
