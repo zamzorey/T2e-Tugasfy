@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fefefe;
+}
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  background: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  width: 48px;
+  margin-right: 10px;
+}
+.brand h1 {
+  font-size: 1.5rem;
+  color: #FF6B00;
+}
+.brand p {
+  font-size: 0.8rem;
+  color: #777;
+}
+.desktop-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.desktop-menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+}
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+.hero {
+  background: linear-gradient(45deg, #FF6B00, #F4C430);
+  color: #fff;
+  padding: 3rem 1rem;
+}
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text {
+  max-width: 500px;
+}
+.hero-img img {
+  max-width: 200px;
+}
+.cta-button {
+  background: #fff;
+  color: #FF6B00;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .mobile-menu a {
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
