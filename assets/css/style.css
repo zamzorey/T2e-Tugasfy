@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+.logo-img {
+  width: 40px;       /* Ukuran lebar */
+  height: auto;      /* Biarkan tingginya menyesuaikan */
+  object-fit: contain;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f5f5f5;
